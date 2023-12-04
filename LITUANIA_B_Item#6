@@ -1,0 +1,15 @@
+#Number6
+
+import pandas as pd
+
+
+df = pd.read_csv('Exam_Table.csv')                        
+
+
+df['HRID'] = df['Location'], df['Site'], df['Replicate']
+
+d = df['HRID']
+'-'.join(d['Location'], d['Site'], d['Replicate'])
+    
+
+df.to_csv('New_Table', index=False)
