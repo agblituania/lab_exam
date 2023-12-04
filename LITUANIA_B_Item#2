@@ -1,0 +1,15 @@
+#Number2
+
+
+# importing pandas as pd 
+import pandas as pd 
+  
+# reading csv file 
+df = pd.read_csv("Exam_Table") 
+  
+# filtering the rows where Genus starts with St
+df = df[df['Genus'].str.contains('Stegastes')] 
+df = df[df['Genus'].str.contains('Stethojulis')] 
+
+print(df) 
+
