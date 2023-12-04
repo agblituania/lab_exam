@@ -1,0 +1,13 @@
+#Number1
+
+
+# importing pandas as pd 
+import pandas as pd 
+  
+# reading csv file 
+df = pd.read_csv("Exam_Table") 
+  
+# filtering the rows where Interval is 0-30
+df = df[df['Interval'].str.contains('0-30')] 
+print(df) 
+
